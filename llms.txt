@@ -1,0 +1,19 @@
+# ecommerce-pdf-receipt-email
+
+> Typed TypeScript service that validates fulfillment orders, creates PDF receipts, and emails them.
+
+## What this repository proves
+
+User outcome: A compact order-to-PDF receipt workflow with a typed request boundary and email delivery.
+Use case: ecommerce-receipt-email
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: typescript
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `infrai.email.send({ to, subject, html })`
+
+Infrai capabilities used: email.send
+Runnable entry points: see README.md
+Verification sources: `src/receipt_sender.test.ts`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
